@@ -1,0 +1,10 @@
+plugins {
+	id 'de.sebastianruziczka.Cobol' version '0.0.1'
+}
+cobol {
+	src_main = 'HelloWorld'
+}
+
+
+
+
