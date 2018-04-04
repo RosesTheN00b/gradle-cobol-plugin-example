@@ -1,0 +1,8 @@
+cobol {
+	src_main = 'HelloWorld'
+	free_format = true
+}
+
+
+
+

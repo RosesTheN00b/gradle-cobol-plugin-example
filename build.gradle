@@ -1,9 +1,9 @@
 plugins {
-	id 'de.sebastianruziczka.Cobol' version '0.0.1'
+	id 'de.sebastianruziczka.Cobol' version '0.0.1' apply false
 }
-cobol {
-	src_main = 'HelloWorld'
-	free_format = true
+
+subprojects {
+	apply plugin: 'de.sebastianruziczka.Cobol'		
 }
 
 
