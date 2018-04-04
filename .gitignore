@@ -1,2 +1,3 @@
-build/*
+project-cobol-fixed-format/build/*
+project-cobol-free-format/build/*
 .gradle/*
