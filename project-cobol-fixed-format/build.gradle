@@ -1,5 +1,5 @@
 cobol {
-	src_main = 'HelloWorld'
+	srcMain = 'HelloWorld'
 }
 
 
