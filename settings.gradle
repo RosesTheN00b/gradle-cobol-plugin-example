@@ -7,4 +7,4 @@ pluginManagement {
 	}
 }
 
-include ':project-cobol-free-format', ':project-cobol-fixed-format'
+include ':project-cobol-free-format', ':project-cobol-fixed-format', ':project-cobol-unit-test'
