@@ -1,6 +1,22 @@
            TESTSUITE 'GREETING AND FAREWELL (FAREWELL WILL FAIL)'
 
-           TESTCASE 'IT RETURNS HELLO, WORLD! AS GREETING'
+           TESTCASE 'This works1'
+           MOVE 'Hans' TO WS-NAME
+           PERFORM 2000-COMPUTE-GREETING
+           EXPECT WS-GREETING-RESULT TO BE 'HELLO Hans'
+
+
+           TESTCASE 'This works2'
+           MOVE 'Hans' TO WS-NAME
+           PERFORM 2000-COMPUTE-GREETING
+           EXPECT WS-GREETING-RESULT TO BE 'HELLO Hans'
+
+           TESTCASE 'This works3'
+           MOVE 'Hans' TO WS-NAME
+           PERFORM 2000-COMPUTE-GREETING
+           EXPECT WS-GREETING-RESULT TO BE 'HELLO Hans'
+
+           TESTCASE 'This works4'
            MOVE 'Hans' TO WS-NAME
            PERFORM 2000-COMPUTE-GREETING
            EXPECT WS-GREETING-RESULT TO BE 'HELLO Hans'
