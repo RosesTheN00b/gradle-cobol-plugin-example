@@ -10,4 +10,4 @@ install:
 
 script:
      - gradle --version
-     - gradle cobolCheck
+     - gradle check
