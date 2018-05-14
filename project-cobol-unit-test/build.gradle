@@ -1,5 +1,5 @@
 cobol {
-	srcMain = 'myPackageMain/Main.cbl'
+	srcMain = 'myPackageMain/HelloWorld.cbl'
 }
 
 
