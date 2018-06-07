@@ -11,3 +11,9 @@ install:
 script:
      - gradle --version
      - gradle check
+     - gradle project-cobol-unit-test:testUnit project-cobol-unit-test:computeTestCoverage
+
+
+after_success:
+  - coveralls
+  - codecov
