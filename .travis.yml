@@ -6,7 +6,8 @@ jdk:
 sudo: required
 install: 
   - sh ci/install_requirements.sh
-
+  - pip install coveralls
+  - pip install codecov
 
 script:
      - gradle --version
