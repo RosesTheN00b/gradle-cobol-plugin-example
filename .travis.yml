@@ -1,10 +1,13 @@
-language: java
+language: python
+python:
+  - "3.6"
+sudo: required
 
 jdk:
   - oraclejdk8
 
 sudo: required
-install: 
+install:  
   - sh ci/install_requirements.sh
   - pip install coveralls
   - pip install codecov
