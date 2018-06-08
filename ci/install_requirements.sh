@@ -1,3 +1,3 @@
 set -e
 sudo apt-get update
-ci/installGnuCobol.sh
+sh ci/installGnuCobol.sh
