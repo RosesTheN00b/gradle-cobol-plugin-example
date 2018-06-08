@@ -18,7 +18,6 @@ script:
      - gradle project-cobol-unit-test:testUnit project-cobol-unit-test:computeTestCoverage 
 --debug
      - cat project-cobol-unit-test/build/CobolUnit/coverage.xml
-     - cat project-cobol-unit-test/build/CobolUnit/MainUT_fixed_TESTEXEC.LOG 
 
 after_success:
   - coveralls
