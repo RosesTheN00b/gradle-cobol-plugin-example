@@ -4,10 +4,10 @@ echo "start installing gnu cobol 3.0"
 
 sudo apt-get install autoconf build-essential
 
-curl -sLk https://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz 
-tar xz  
+curl -sLk https://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz >> download_berkley.log
+tar xz  >> unpack_berkey.log
 cd db-4.8.30.NC/build_unix
-../dist/configure --enable-cxx --prefix=/usr && make install && make clean 
+../dist/configure --enable-cxx --prefix=/usr >> install_berkley.log  && make install >> make_install_berkley.log  && make clean >> make_clean_berkley.log 
 cd ..
 cd ..
 cd ..
