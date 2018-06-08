@@ -16,6 +16,7 @@ script:
      - gradle --version
      - gradle check
      - gradle project-cobol-unit-test:testUnit project-cobol-unit-test:computeTestCoverage
+     - cat project-cobol-unit-test/build/CobolUnit/coverage.xml
 
 after_success:
   - coveralls
