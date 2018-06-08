@@ -1,11 +1,4 @@
-set -e
 
-wget -N -e robots=off -r -np -nH --cut-dirs 5  http://svn.code.sf.net/p/open-cobol/code/branches/gnucobol-2.x
-
-tar xvf gnucobol-2.x.tar.gz
-cd gnucobol-2.x
-./configure
-make
-make check
-sudo make install
-sudo ldconfig
+apt-get -y install autoconf build-essential && \
+    curl -sLk https://sourceforge.net/projects/open-cobol/files/gnu-cobol/3.0/gnucobol-3.0-rc1.tar.gz | tar xz && \
+    cd gnucobol-3.0-rc1 && ./configure && make && make install && ldconfig && cd ..
