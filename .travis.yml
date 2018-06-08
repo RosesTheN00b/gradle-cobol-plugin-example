@@ -16,10 +16,8 @@ script:
      - gradle --version
      - gradle check
      - gradle project-cobol-unit-test:testUnit project-cobol-unit-test:computeTestCoverage
-     - cp project-cobol-unit-test/build/CobolUnit/cov.xml coverage.xml
 
 after_success:
   - coveralls
   - codecov
-
 
