@@ -15,7 +15,7 @@ install:
 script:
      - ./gradlew --version
      - ./gradlew check
-     - ./gradlew project-cobol-unit-test:testUnit project-cobol-unit-test:computeTestCoverage --debug
+     - ./gradlew project-cobol-unit-test:testUnit project-cobol-unit-test:computeTestCoverage
      - cat project-cobol-unit-test/build/CobolUnit/coverage.xml
 
 after_success:
