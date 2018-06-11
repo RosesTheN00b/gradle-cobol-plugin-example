@@ -41,7 +41,7 @@
 
        3000-NOTHING-AND-EXIT.
        *> Nothing
-           DISPLAY 'NOTHING'.
+           DISPLAY 'NOTHING'
        *> Exit
            DISPLAY 'PROGRAMM WILL EXIT HERE'
 
