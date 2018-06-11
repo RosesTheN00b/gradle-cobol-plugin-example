@@ -5,7 +5,7 @@
       * Tectonics: cobc
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. LOGIN_GREETING.
+       PROGRAM-ID. LOGIN.
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
@@ -45,4 +45,4 @@
        *> Exit
            DISPLAY 'PROGRAMM WILL EXIT HERE'.
 
-       END PROGRAM LOGIN_GREETING.
+       END PROGRAM LOGIN.
