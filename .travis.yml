@@ -6,6 +6,10 @@ sudo: required
 jdk:
   - oraclejdk8
 
+addons:
+  sonarcloud:
+    organization: "rosesthen00b-github"
+
 sudo: required
 install:  
   - sh ci/install_requirements.sh
@@ -22,4 +26,4 @@ script:
 after_success:
   - coveralls
   - codecov
-
+  - sonar-scanner -Dsonar.login=$SONAR
