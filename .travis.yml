@@ -16,7 +16,7 @@ script:
      - cd ./project-cobol-fixed-format && gradle check && cd ..
      - cd ./project-cobol-free-format && gradle check && cd ..
      - cd ./project-cobol-unit-test && gradle check && cd ..
-     - cd ./project-cobol-unit-test && gradle testUnit computeTestCoverage && cd ..
+     - cd ./project-cobol-unit-test && gradle testUnit computeTestCoverage --debug && cd ..
      - cat ./project-cobol-unit-test/build/CobolUnit/coverage.xml
 
 after_success:
