@@ -13,9 +13,10 @@ install:
   - pip install codecov
 
 script:
-     - ./gradlew --version
-     - ./gradlew check
-     - ./gradlew project-cobol-unit-test:testUnit project-cobol-unit-test:computeTestCoverage
+     - cd project-cobol-fixed-format && gradle check && cd ..
+     - cd project-cobol-free-format && gradle check && cd ..
+     - cd project-cobol-unit-test && gradle check && cd ..
+     - cd project-cobol-unit-test && gradle testUnit computeTestCoverage && cd ..
      - cat project-cobol-unit-test/build/CobolUnit/coverage.xml
 
 after_success:
