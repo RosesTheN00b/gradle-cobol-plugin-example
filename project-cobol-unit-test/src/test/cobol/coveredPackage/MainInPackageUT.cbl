@@ -1,4 +1,4 @@
-           TESTSUITE 'GREETING AND FAREWELL (FAREWELL WILL FAIL)'
+           TESTSUITE 'Compute greeting. 100% Coverage'
 
            TESTCASE 'TEST WITH HANS'
            MOVE 'Hans' TO WS-NAME
