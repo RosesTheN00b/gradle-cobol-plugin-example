@@ -18,5 +18,5 @@
        2000-COMPUTE-GREETING.
        *> This file is 100% tested
            STRING WS-GREETING WS-NAME INTO WS-SALUTE END-STRING.
-           DISPLAY WS-GREETING-RESULT.
+           DISPLAY WS-SALUTE.
        END PROGRAM FullTested.
