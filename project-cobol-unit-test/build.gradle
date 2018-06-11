@@ -1,6 +1,7 @@
 cobol {
-	srcMain = 'myPackageMain/HelloWorld.cbl'
+	srcMain = 'LOGIN_GREETING'
 	unittestCodeCoverage = true
+	terminal='gnome-terminal'
 }
 
 
