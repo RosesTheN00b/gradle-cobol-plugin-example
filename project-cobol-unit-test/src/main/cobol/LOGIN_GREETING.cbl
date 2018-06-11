@@ -5,7 +5,7 @@
       * Tectonics: cobc
       ******************************************************************
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. Main.
+       PROGRAM-ID. LOGIN_GREETING.
        DATA DIVISION.
        FILE SECTION.
        WORKING-STORAGE SECTION.
@@ -34,4 +34,4 @@
 
        3000-Nothing.
             DISPLAY 'nothing'.
-       END PROGRAM Main.
+       END PROGRAM LOGIN_GREETING.
