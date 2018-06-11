@@ -19,4 +19,5 @@
        *> This file is 100% tested
            STRING WS-GREETING WS-NAME INTO WS-SALUTE END-STRING.
            DISPLAY WS-SALUTE.
+           DISPLAY '100% covered ^^'
        END PROGRAM FullTested.
