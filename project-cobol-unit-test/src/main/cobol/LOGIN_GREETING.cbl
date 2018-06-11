@@ -37,12 +37,12 @@
                DISPLAY ' THIS IS SAD :('
            END-IF.
 
-           DISPLAY 'HAVE FUN!'
+           DISPLAY 'HAVE FUN!'.
 
        3000-NOTHING-AND-EXIT.
        *> Nothing
            DISPLAY 'NOTHING'
        *> Exit
-           DISPLAY 'PROGRAMM WILL EXIT HERE'
+           DISPLAY 'PROGRAMM WILL EXIT HERE'.
 
        END PROGRAM LOGIN_GREETING.
