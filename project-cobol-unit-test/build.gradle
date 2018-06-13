@@ -10,9 +10,7 @@ plugins {
 
 
 cobol {
-	srcMain = 'LOGIN_GREETING'
+	srcMain = 'LOGIN'
 	unittestCodeCoverage = true
 }
-
-
 
