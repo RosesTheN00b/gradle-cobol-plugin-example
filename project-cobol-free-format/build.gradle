@@ -9,7 +9,7 @@ plugins {
 }
 
 cobol {
-	srcMain = 'HelloWorld'
+	srcMain = 'HELLOWORLD'
 	fileFormat = 'free'
 }
 
