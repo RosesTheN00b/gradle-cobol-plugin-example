@@ -1,5 +1,4 @@
 set -e
 sudo apt-get update
-sudo deb http://cz.archive.ubuntu.com/ubuntu cosmic main universe
-sudo apt-get update
-sudo apt-get install gnucobol
+wget http://mirrors.kernel.org/ubuntu/pool/universe/g/gnucobol/gnucobol_2.2-2_amd64.deb
+sudo apt install ./gnucobol_2.2-2_amd64.deb
