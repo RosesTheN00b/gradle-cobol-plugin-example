@@ -12,7 +12,7 @@ addons:
 
 sudo: required
 install:  
-  - sh ci/install_requirements.sh
+  - sh ci/install_requirements.sh > install.log
   - pip install coveralls
   - pip install codecov
 
@@ -20,10 +20,10 @@ script:
      - cd ./project-cobol-fixed-format && gradle check && cd ..
      - cd ./project-cobol-free-format && gradle check && cd ..
      - cd ./project-cobol-unit-test && gradle check && cd ..
-     - cd ./project-cobol-unit-test && gradle testUnit computeTestCoverage && cd ..
+     - cd ./project-cobol-unit-test && gradle testUnit computeTestCoverage -debug && cd ..
      - cat ./project-cobol-unit-test/build/CobolUnit/coverage.xml
      - cd ./project-cobol-integration-test && gradle check && cd ..
-     - cd ./project-cobol-integration-test && testIntegration computeIntegrationTestCoverage && cd ..
+     - cd ./project-cobol-integration-test && gradle testIntegration computeIntegrationTestCoverage && cd ..
      - cat ./project-cobol-integration-test/CobolUnit/integration-coverage.xml
 
 after_success:
