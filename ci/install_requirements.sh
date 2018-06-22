@@ -1,4 +1,10 @@
 set -e
 sudo apt-get update
-wget http://mirrors.kernel.org/ubuntu/pool/universe/g/gnucobol/gnucobol_2.2-2_amd64.deb
-sudo apt install ./gnucobol_2.2-2_amd64.deb
+sudo apt-get -y install autoconf build-essential
+curl -sLk https://sourceforge.net/projects/open-cobol/files/gnu-cobol/3.0/gnucobol-3.0-rc1.tar.gz | tar xz \
+cd gnucobol-3.0-rc1 
+./configure 
+make
+sudo make install 
+ldconfig
+
