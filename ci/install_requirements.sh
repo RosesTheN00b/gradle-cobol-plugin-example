@@ -6,7 +6,7 @@ sudo apt-get -y install autoconf build-essential
 curl -sLk https://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz | tar xz
 cd db-4.8.30.NC/build_unix
 ../dist/configure --enable-cxx --prefix=/usr 
-make install
+sudo make install >> makelog.log
 make clean 
 cd ..
 
