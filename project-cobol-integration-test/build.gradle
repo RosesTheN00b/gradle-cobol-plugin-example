@@ -1,0 +1,17 @@
+buildscript {
+         dependencies {
+                classpath group: 'de.sebastianruziczka', name: 'gradle-cobol-plugin-unittest-extension', version: 'latest'
+        }
+}
+
+plugins {
+        id 'de.sebastianruziczka.Cobol' version 'latest'
+}
+
+
+cobol {
+	srcMain = 'simple/FullTested'
+
+	integrationtestCodeCoverage = true
+}
+

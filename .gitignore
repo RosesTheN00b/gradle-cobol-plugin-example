@@ -1,4 +1,5 @@
 project-cobol-fixed-format/build/*
 project-cobol-free-format/build/*
 project-cobol-unit-test/build/*
+project-cobol-integration-test/build/*
 **/.gradle/*
