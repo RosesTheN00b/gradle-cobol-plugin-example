@@ -22,6 +22,9 @@ script:
      - cd ./project-cobol-unit-test && gradle check && cd ..
      - cd ./project-cobol-unit-test && gradle testUnit computeTestCoverage && cd ..
      - cat ./project-cobol-unit-test/build/CobolUnit/coverage.xml
+     - cd ./project-cobol-integration-test && gradle check && cd ..
+     - cd ./project-cobol-integration-test && testIntegration computeIntegrationTestCoverage && cd ..
+     - cat ./project-cobol-integration-test/CobolUnit/integration-coverage.xml
 
 after_success:
   - coveralls
