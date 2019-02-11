@@ -19,7 +19,7 @@ install:
 script:
   - sh ci/pull_plugin_sources.sh
   - sh ci/build_plugin.sh
-  - sh ci/exec_tests.sh
+  - sh ci/install_plugin.sh
   - sh ci/exec_tests.sh
 
 after_success:
