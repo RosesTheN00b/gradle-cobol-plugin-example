@@ -1,5 +1,8 @@
 #! /bin/bash
 set -e
+
+cobc -h || sh ci/install_requirements.sh > install.log
+
 sh ci/pull_plugin_sources.sh
 
 cd gradle-cobol-plugin/gradle-cobol-plugin-unittest-extension

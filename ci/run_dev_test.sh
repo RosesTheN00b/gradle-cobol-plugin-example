@@ -1,5 +1,12 @@
 #! /bin/bash
 set -e
+
+if cobc -h ; then
+    echo "Command succeeded"
+else
+    sh ci/install_requirements.sh > install.log
+fi
+
 sh ci/pull_plugin_sources.sh
 
 cd gradle-cobol-plugin
