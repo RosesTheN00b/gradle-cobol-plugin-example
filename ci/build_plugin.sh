@@ -2,6 +2,6 @@
 set -e
 
 cd gradle-cobol-plugin
-gradle clean
-gradle publish
-gradle publish -PgenerateLatest
+./gradlew clean
+./gradlew publish
+./gradlew publish -PgenerateLatest
