@@ -8,7 +8,7 @@ jdk:
 
 addons:
   sonarcloud:
-    organization: "rosesthen00b-github"
+    organization: "sebastianrzk-github"
 
 sudo: required
 install:  
@@ -25,4 +25,4 @@ script:
 after_success:
   - coveralls
   - codecov
-  - sonar-scanner -Dsonar.login=$SONAR -Dsonar.projectKey=cobol -Dsonar.organization=rosesthen00b-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io 
+  - sonar-scanner -Dsonar.login=$SONAR -Dsonar.projectKey=cobol -Dsonar.organization=sebastianrzk-github -Dsonar.sources=. -Dsonar.host.url=https://sonarcloud.io 
